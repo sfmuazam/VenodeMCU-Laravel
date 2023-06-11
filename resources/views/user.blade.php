@@ -104,11 +104,11 @@
                         </div>
                     </div>
             </div>
-                <div class="modal-footer">
-                    <button type="reset" class="btn btn-default me-2">Reset</button>
-                    <button type="submit" class="btn btn-primary" id="saveBtn">Simpan</button>
-                </div>
-                </form>
+            <div class="modal-footer">
+                <button type="reset" class="btn btn-default me-2">Reset</button>
+                <button type="submit" class="btn btn-primary" id="saveBtn">Simpan</button>
+            </div>
+            </form>
         </div>
     </div>
 </div>
@@ -148,11 +148,11 @@
                         </div>
                     </div>
             </div>
-                <div class="modal-footer">
-                    <button type="reset" class="btn btn-default me-2">Reset</button>
-                    <button type="submit" class="btn btn-primary" id="saveEditBtn">Simpan</button>
-                </div>
-                </form>
+            <div class="modal-footer">
+                <button type="reset" class="btn btn-default me-2">Reset</button>
+                <button type="submit" class="btn btn-primary" id="saveEditBtn">Simpan</button>
+            </div>
+            </form>
         </div>
     </div>
 </div>

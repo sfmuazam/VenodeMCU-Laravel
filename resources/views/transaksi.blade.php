@@ -3,122 +3,122 @@
 
 <main class="content container mx-auto">
 
+    <div class="content-header">
+        <h4 class="content-title ~mx-auto">Transaksi</h4>
+
+    </div>
+
+    <div class="content-body">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="card mb-4">
+                    <div class="card-body d-flex align-items-center">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-primary me-4 rounded-3 d-flex align-items-center justify-content-center text-white">
+                                <svg class="h-6 w-6 text-white" x-description="Heroicon name: outline/cursor-click"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-1">
+                                <span class="text-secondary">Harga Barang</span>
+                            </div>
+                            <span id="harga" class="h3 mb-0 lh-1">{{ $harga }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="card mb-4">
+                    <div class="card-body d-flex align-items-center">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-success me-4 rounded-3 d-flex align-items-center justify-content-center text-white">
+                                <svg class="h-6 w-6 text-white" x-description="Heroicon name: outline/mail-open"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-1">
+                                <span class="text-secondary">Total Transaksi</span>
+                            </div>
+                            <span id="jumlah_transaksi" class="h3 mb-0 lh-1">{{ $jumlah }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="card mb-4">
+                    <div class="card-body d-flex align-items-center">
+                        <div>
+                            <div
+                                class="w-12 h-12 bg-success me-4 rounded-3 d-flex align-items-center justify-content-center text-white">
+                                <svg class="h-6 w-6 text-white" x-description="Heroicon name: outline/mail-open"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb-1">
+                                <span class="text-secondary">Transaksi Hari Ini</span>
+                            </div>
+                            <span id="jumlah_hari_ini" class="h3 mb-0 lh-1">{{ $jumlah_hari_ini }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="content-header">
-            <h4 class="content-title ~mx-auto">Transaksi</h4>
-
-        </div>
-
-        <div class="content-body">
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card mb-4">
-                        <div class="card-body d-flex align-items-center">
-                            <div>
-                                <div
-                                    class="w-12 h-12 bg-primary me-4 rounded-3 d-flex align-items-center justify-content-center text-white">
-                                    <svg class="h-6 w-6 text-white" x-description="Heroicon name: outline/cursor-click"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="mb-1">
-                                    <span class="text-secondary">Harga Barang</span>
-                                </div>
-                                <span id="harga" class="h3 mb-0 lh-1">{{ $harga }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card mb-4">
-                        <div class="card-body d-flex align-items-center">
-                            <div>
-                                <div
-                                    class="w-12 h-12 bg-success me-4 rounded-3 d-flex align-items-center justify-content-center text-white">
-                                    <svg class="h-6 w-6 text-white" x-description="Heroicon name: outline/mail-open"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="mb-1">
-                                    <span class="text-secondary">Total Transaksi</span>
-                                </div>
-                                <span id="jumlah_transaksi" class="h3 mb-0 lh-1">{{ $jumlah }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card mb-4">
-                        <div class="card-body d-flex align-items-center">
-                            <div>
-                                <div
-                                    class="w-12 h-12 bg-success me-4 rounded-3 d-flex align-items-center justify-content-center text-white">
-                                    <svg class="h-6 w-6 text-white" x-description="Heroicon name: outline/mail-open"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="mb-1">
-                                    <span class="text-secondary">Transaksi Hari Ini</span>
-                                </div>
-                                <span id="jumlah_hari_ini" class="h3 mb-0 lh-1">{{ $jumlah_hari_ini }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-header">
-                <h5 class="content-title">Data Transaksi</h5>
-                <div class="ms-auto">
-                    <button id="createNewUser" class="btn btn-primary" data-bs-toggle="modal"
+            <h5 class="content-title">Data Transaksi</h5>
+            <div class="ms-auto">
+                <button id="createNewUser" class="btn btn-primary" data-bs-toggle="modal"
                     data-bs-target="#modal-kelas">Ganti Harga</button>
-                </div>
-            </div>
-            <div class="card mb-4">
-                <table id="table-tabungan" class="table table-hover mb-0 align-middle">
-                    <thead>
-                        <tr>
-                            <th class="text-center" style="width: 5px;">
-                                <div data-toggle="tooltip" data-original-title="Delete"
-                                    class="btn btn-sm btn-icon btn-danger btn-circle mr-2 delete_all">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                                        class="w-5 h-5">
-                                        <path
-                                            d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                                    </svg>
-                                </div>
-                            </th>
-                            <th>Tanggal</th>
-                            <th>Pembeli</th>
-                            <th>Saldo Awal</th>
-                            <th>Besar Transaksi</th>
-                            <th>Saldo Akhir</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                </table>
             </div>
         </div>
-    </main>
+        <div class="card mb-4">
+            <table id="table-tabungan" class="table table-hover mb-0 align-middle">
+                <thead>
+                    <tr>
+                        <th class="text-center" style="width: 5px;">
+                            <div data-toggle="tooltip" data-original-title="Delete"
+                                class="btn btn-sm btn-icon btn-danger btn-circle mr-2 delete_all">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5">
+                                    <path
+                                        d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+                                </svg>
+                            </div>
+                        </th>
+                        <th>Tanggal</th>
+                        <th>Pembeli</th>
+                        <th>Saldo Awal</th>
+                        <th>Besar Transaksi</th>
+                        <th>Saldo Akhir</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</main>
 
-    <!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="modal-kelas" tabindex="-1" aria-labelledby="exampleModalFormLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -148,11 +148,11 @@
         </div>
     </div>
 </div>
-    @endsection
+@endsection
 
-    @section('script')
-    <script type="text/javascript">
-        $('document').ready(function () {
+@section('script')
+<script type="text/javascript">
+    $('document').ready(function () {
             function updateJumlahTransaksi() {
                 $.ajax({
                     url: "{{ route('jumlahTransaksi') }}",
@@ -400,5 +400,5 @@
         });
 
         });
-    </script>
-    @endsection
+</script>
+@endsection
