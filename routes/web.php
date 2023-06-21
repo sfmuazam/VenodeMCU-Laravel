@@ -21,6 +21,7 @@ use App\Http\Controllers\BarangController;
 Route::get('/', [TransaksiController::class, 'index']);
 Route::resource('/transaksi', TransaksiController::class);
 Route::get('/getJumlahTransaksi', [TransaksiController::class, 'getJumlahTransaksi'])->name('jumlahTransaksi');
+Route::get('/getJumlahTransaksiToday', [TransaksiController::class, 'getJumlahTransaksiToday'])->name('jumlahTransaksiToday');
 Route::delete('/transaksi', [TransaksiController::class, 'deleteAll'])->name('transaksi.deleteAll');
 
 Route::resource('/user', UserController::class);

@@ -60,6 +60,13 @@ class TransaksiController extends Controller
         return response()->json(['jumlah' => $jumlah]);
     }
 
+    public function getJumlahTransaksiToday()
+    {
+        $today = date('Y-m-d');
+        $jumlah = Transaksi::where('created_at', 'like' , "%$today%")->count();
+        return response()->json(['jumlah' => $jumlah]);
+    }
+
     public function store(Request $request)
     {
         $hargaBarang = Barang::where('id', '1')->value('harga');

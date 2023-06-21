@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ $title }} | VenodeMCU</title>
-    <link rel="shortcut icon" href="{{ asset('images/smada.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('unsoed.png') }}" type="image/png">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="{{ asset('js/main.js') }}"></script>
